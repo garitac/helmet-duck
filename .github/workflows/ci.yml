@@ -1,0 +1,30 @@
+name: CI
+
+# The marketplace's gate, on every push to main and every pull request: the file parses,
+# names are unique, every source is the owner's repository, and every pinned version equals
+# the product's own manifest on its main branch. Nothing is deployed or installed from here.
+#
+# Actions are pinned to full commit SHAs; the trailing comment is the version.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify the marketplace
+        run: python3 tools/check.py
