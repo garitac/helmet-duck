@@ -1,6 +1,10 @@
 # Security
 
-This repository holds only the marketplace index. Report a vulnerability in a product,
-in the site, or in this index through GitHub's private vulnerability reporting on the
-Security tab of https://github.com/garitac/helmet-duck-website, in English. Do not open
-a public issue for a security defect; issues are off here in any case.
+Report vulnerabilities in the marketplace or helmetduck.com privately through
+[GitHub private vulnerability reporting](https://github.com/garitac/helmet-duck/security/advisories/new).
+Reports may be submitted in English. Do not open a public issue for a security defect.
+
+For Bushido vulnerabilities, use
+[the product's private reporting form](https://github.com/garitac/helmet-duck-bushido/security/advisories/new).
+If you cannot use GitHub, contact hello@helmetduck.com. Do not send passwords,
+access tokens, or private customer data with an initial report.
