@@ -18,7 +18,7 @@ never changes:
 
 Read a product's `RISKS.md` in its repository before installing it. Installing or using a
 product means you accept the risks listed there and the terms at
-https://helmetduck.com/terms.html. The site's source is https://github.com/garitac/helmet-duck-website.
+https://helmetduck.com/terms.html. Product information is available at https://helmetduck.com.
 
 ## How a product gets listed
 
@@ -32,8 +32,11 @@ here: a user's Claude Code reads this file and fetches the product from its own 
 ## Support
 
 Issues are off in this repository on purpose. Report a defect in the product's own
-repository. Report a vulnerability through the Security tab of
-https://github.com/garitac/helmet-duck-website, in English.
+repository. Report a vulnerability privately through
+https://github.com/garitac/helmet-duck/security/advisories/new, in English.
+
+Support development through [GitHub Sponsors](https://github.com/sponsors/garitac).
+Sponsorship is optional and does not change the installation steps.
 
 ## Licence
 
